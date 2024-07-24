@@ -1,10 +1,8 @@
-package spring_framework;
+package spring_framework.c02createjavaobjects;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import spring_framework.game.GameRunner;
-import spring_framework.game.GamingConsole;
-import spring_framework.game.PacmanGame;
+
 
 
 @Configuration

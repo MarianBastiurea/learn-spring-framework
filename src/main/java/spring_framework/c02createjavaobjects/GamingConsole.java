@@ -1,4 +1,4 @@
-package spring_framework.game;
+package spring_framework.c02createjavaobjects;
 
 public interface GamingConsole {
     void up();

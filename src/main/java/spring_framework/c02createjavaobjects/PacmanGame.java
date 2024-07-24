@@ -1,5 +1,9 @@
-package spring_framework.game;
+package spring_framework.c02createjavaobjects;
 
+
+import org.springframework.stereotype.Component;
+
+@Component
 public class PacmanGame implements GamingConsole {
     public void up() {
         System.out.println("up");

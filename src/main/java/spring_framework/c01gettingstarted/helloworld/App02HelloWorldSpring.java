@@ -1,4 +1,4 @@
-package spring_framework.helloworld;
+package spring_framework.c01gettingstarted.helloworld;
 
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

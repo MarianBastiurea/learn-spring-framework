@@ -1,11 +1,23 @@
-package spring_framework;
+package spring_framework.c02createjavaobjects;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import spring_framework.game.GameRunner;
-import spring_framework.game.GamingConsole;
+import org.springframework.context.annotation.Bean;
 
-public class App03GamingSpringBeans {
 
+
+public class App04GamingSpringBeans {
+
+    @Bean
+    public GamingConsole game() {
+        var game = new PacmanGame();
+        return game;
+    }
+
+    @Bean
+    public GameRunner gameRunner(GamingConsole game) {
+        var gameRunner = new GameRunner(game);
+        return gameRunner;
+    }
     public static void main(String[] args) {
 
         try (var context =
