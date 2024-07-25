@@ -1,7 +1,10 @@
 package com.marianbastiurea.learnspringframework.c02createjavaobjects;
 
-import com.marianbastiurea.learnspringframework.c01gettingstarted.game.GamingConsole;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
 
+@Component
+@Primary
 public class MarioGame implements GamingConsole {
     public void up() {
         System.out.println("Jump");

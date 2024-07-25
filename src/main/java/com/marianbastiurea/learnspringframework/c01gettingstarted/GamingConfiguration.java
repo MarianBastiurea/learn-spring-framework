@@ -1,8 +1,8 @@
 package com.marianbastiurea.learnspringframework.c01gettingstarted;
 
-import com.marianbastiurea.learnspringframework.c02createjavaobjects.GameRunner;
-import com.marianbastiurea.learnspringframework.c02createjavaobjects.GamingConsole;
-import com.marianbastiurea.learnspringframework.c02createjavaobjects.PacmanGame;
+import com.marianbastiurea.learnspringframework.c01gettingstarted.game.GameRunner;
+import com.marianbastiurea.learnspringframework.c01gettingstarted.game.GamingConsole;
+import com.marianbastiurea.learnspringframework.c01gettingstarted.game.PacmanGame;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
