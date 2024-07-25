@@ -1,4 +1,4 @@
-package com.marianbastiurea.springframework.c02createjavaobjects;
+package com.marianbastiurea.learnspringframework.c02createjavaobjects;
 
 
 import org.springframework.stereotype.Component;

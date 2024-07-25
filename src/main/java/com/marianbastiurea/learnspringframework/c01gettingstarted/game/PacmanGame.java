@@ -1,4 +1,4 @@
-package com.marianbastiurea.springframework.c01gettingstarted.game;
+package com.marianbastiurea.learnspringframework.c01gettingstarted.game;
 
 public class PacmanGame implements GamingConsole {
     public void up() {

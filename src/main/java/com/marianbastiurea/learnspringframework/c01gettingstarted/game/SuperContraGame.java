@@ -1,6 +1,4 @@
-package com.marianbastiurea.springframework.c02createjavaobjects;
-
-import com.marianbastiurea.springframework.c01gettingstarted.game.GamingConsole;
+package com.marianbastiurea.learnspringframework.c01gettingstarted.game;
 
 public class SuperContraGame implements GamingConsole {
 

@@ -1,5 +1,8 @@
-package com.marianbastiurea.springframework.c01gettingstarted.game;
+package com.marianbastiurea.learnspringframework.c02createjavaobjects;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class GameRunner {
     private GamingConsole game;
 

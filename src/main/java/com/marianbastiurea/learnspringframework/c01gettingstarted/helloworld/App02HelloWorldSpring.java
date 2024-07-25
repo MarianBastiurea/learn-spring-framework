@@ -1,4 +1,4 @@
-package com.marianbastiurea.springframework.c01gettingstarted.helloworld;
+package com.marianbastiurea.learnspringframework.c01gettingstarted.helloworld;
 
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

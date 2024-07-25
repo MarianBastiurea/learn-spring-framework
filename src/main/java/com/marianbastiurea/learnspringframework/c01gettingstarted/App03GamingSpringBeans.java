@@ -1,8 +1,7 @@
-package com.marianbastiurea.springframework.c01gettingstarted;
+package com.marianbastiurea.learnspringframework.c01gettingstarted;
 
-import com.marianbastiurea.springframework.c01gettingstarted.game.GameRunner;
-import com.marianbastiurea.springframework.c01gettingstarted.game.GamingConsole;
-import com.marianbastiurea.springframework.c02createjavaobjects.GamingConfiguration;
+import com.marianbastiurea.learnspringframework.c01gettingstarted.game.GameRunner;
+import com.marianbastiurea.learnspringframework.c01gettingstarted.game.GamingConsole;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class App03GamingSpringBeans {
