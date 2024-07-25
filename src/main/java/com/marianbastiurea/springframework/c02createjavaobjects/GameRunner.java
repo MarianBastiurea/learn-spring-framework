@@ -1,4 +1,4 @@
-package com.marianbastiurea.spring_framework.c02createjavaobjects;
+package com.marianbastiurea.springframework.c02createjavaobjects;
 
 
 public class GameRunner {

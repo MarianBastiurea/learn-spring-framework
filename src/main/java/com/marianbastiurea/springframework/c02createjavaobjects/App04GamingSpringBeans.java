@@ -1,4 +1,4 @@
-package com.marianbastiurea.spring_framework.c02createjavaobjects;
+package com.marianbastiurea.springframework.c02createjavaobjects;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;

@@ -1,7 +1,7 @@
-package com.marianbastiurea.spring_framework.c01gettingstarted;
+package com.marianbastiurea.springframework.c01gettingstarted;
 
-import com.marianbastiurea.spring_framework.c01gettingstarted.game.GameRunner;
-import com.marianbastiurea.spring_framework.c01gettingstarted.game.MarioGame;
+import com.marianbastiurea.springframework.c01gettingstarted.game.GameRunner;
+import com.marianbastiurea.springframework.c01gettingstarted.game.MarioGame;
 
 public class App01Gaming {
     public static void main(String[] args) {
