@@ -1,5 +1,4 @@
-package spring_framework.c02createjavaobjects;
-
+package com.marianbastiurea.spring_framework.c01gettingstarted.game;
 
 public class GameRunner {
     private GamingConsole game;

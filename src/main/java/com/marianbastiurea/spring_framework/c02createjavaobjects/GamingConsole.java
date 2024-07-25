@@ -1,4 +1,4 @@
-package spring_framework.c01gettingstarted.game;
+package com.marianbastiurea.spring_framework.c02createjavaobjects;
 
 public interface GamingConsole {
     void up();

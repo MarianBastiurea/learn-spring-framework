@@ -1,23 +1,12 @@
-package spring_framework.c02createjavaobjects;
+package com.marianbastiurea.spring_framework.c01gettingstarted;
 
+import com.marianbastiurea.spring_framework.c01gettingstarted.game.GameRunner;
+import com.marianbastiurea.spring_framework.c01gettingstarted.game.GamingConsole;
+import com.marianbastiurea.spring_framework.c02createjavaobjects.GamingConfiguration;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Bean;
 
+public class App03GamingSpringBeans {
 
-
-public class App04GamingSpringBeans {
-
-    @Bean
-    public GamingConsole game() {
-        var game = new PacmanGame();
-        return game;
-    }
-
-    @Bean
-    public GameRunner gameRunner(GamingConsole game) {
-        var gameRunner = new GameRunner(game);
-        return gameRunner;
-    }
     public static void main(String[] args) {
 
         try (var context =

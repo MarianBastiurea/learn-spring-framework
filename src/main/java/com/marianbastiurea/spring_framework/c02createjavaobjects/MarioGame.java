@@ -1,6 +1,6 @@
-package spring_framework.c02createjavaobjects;
+package com.marianbastiurea.spring_framework.c02createjavaobjects;
 
-import spring_framework.c01gettingstarted.game.GamingConsole;
+import com.marianbastiurea.spring_framework.c01gettingstarted.game.GamingConsole;
 
 public class MarioGame implements GamingConsole {
     public void up() {
