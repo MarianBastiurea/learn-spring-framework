@@ -28,3 +28,10 @@ Application Context) to manage these objects
 
 @Primary- A bean should be given preference when multiplies candudates are qualified
 @Qualifier- when a specific bean should be auto-wired( name of the bean could be considered as qualifier
+
+Constructor-based : Dependencies are set by creating the Bean using its Constructor
+Setter-based : Dependencies are set by calling setter methods on your beans
+Field: No setter or constructor. Dependency is injected using reflection.
+Question: Which one should you use?
+Spring team recommends Constructor-based injection as dependencies are automatically set when an object
+is created!
