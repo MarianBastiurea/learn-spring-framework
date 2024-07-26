@@ -70,3 +70,24 @@ Beans per class?
  Lazy-resolution proxy will be injected instead of actual dependency
  Can be used on Configuration (@Configuration) class:
  All @Bean methods within the @Configuration will be lazily initialized
+
+ Comparing Lazy Initialization vs Eager Initialization
+Initialization time:
+ Lazy Initialization  Bean initialized when it is first made use of in the application
+ Eager Initialization Bean initialized at startup of the application
+Default:
+ Lazy Initialization NOT Default
+ Eager Initialization Default
+Code Snippet:
+ Lazy Initialization @Lazy OR @Lazy(value=true)
+ Eager Initialization @Lazy(value=false) OR (Absence of @Lazy)
+What happens if there are errors in initializing?
+Lazy Initialization Errors will result in runtime exceptions
+Eager Initialization Errors will prevent application from starting up
+Usage:
+ Lazy Initialization Rarely used
+ Eager Initialization Very frequently used
+Memory Consumption:
+ Less (until bean is initialized)
+  Eager Initialization All beans are initialized at startup
+ Recommended Scenario Beans very rarely used in your app Most of your beans
