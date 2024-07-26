@@ -57,5 +57,16 @@ Recommended For
 libraries: @Bean
 Beans per class?
 @ComponentOne (Singleton) or Many (Prototype)
- @Bean-One or Many - You can create as many as
-you want
+ @Bean-One or Many - You can create as many as you want
+
+ Exploring Lazy Initialization of Spring Beans
+ Default initialization for Spring Beans: Eager
+ Eager initialization is recommended:
+ Errors in the configuration are discovered immediately at application startup
+ However, you can configure beans to be lazily initialized using Lazy annotation:
+ NOT recommended (AND) Not frequently used
+ Lazy annotation:
+ Can be used almost everywhere @Component and @Bean are used
+ Lazy-resolution proxy will be injected instead of actual dependency
+ Can be used on Configuration (@Configuration) class:
+ All @Bean methods within the @Configuration will be lazily initialized
