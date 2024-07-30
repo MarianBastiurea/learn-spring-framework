@@ -17,7 +17,6 @@ public class SayHelloController {
         return "Hello! What are you learning today?";
     }
 
-
     @RequestMapping("say-hello-html")
     @ResponseBody
     public String sayHelloHtml() {
@@ -34,4 +33,14 @@ public class SayHelloController {
         return sb.toString();
     }
 
+    //
+    // "say-hello-jsp" => sayHello.jsp
+    // /src/main/resources/META-INF/resources/WEB-INF/jsp/sayHello.jsp
+    // /src/main/resources/META-INF/resources/WEB-INF/jsp/welcome.jsp
+    // /src/main/resources/META-INF/resources/WEB-INF/jsp/login.jsp
+    // /src/main/resources/META-INF/resources/WEB-INF/jsp/todos.jsp
+    @RequestMapping("say-hello-jsp")
+    public String sayHelloJsp() {
+        return "sayHello";
+    }
 }
