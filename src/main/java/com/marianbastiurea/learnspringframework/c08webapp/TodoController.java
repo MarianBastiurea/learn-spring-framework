@@ -12,7 +12,7 @@ import java.time.LocalDate;
 import java.util.List;
 import jakarta.validation.Valid;
 
-@@Controller
+@Controller
 @SessionAttributes("name")
 public class TodoController {
 
@@ -70,4 +70,4 @@ public class TodoController {
         return "todo";
     }
 
-}}
+}
