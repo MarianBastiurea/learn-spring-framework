@@ -12,6 +12,11 @@ import org.springframework.security.web.SecurityFilterChain;
 
 import java.util.function.Function;
 
+import static org.springframework.security.config.Customizer.withDefaults;
+
+
+
+
 @Configuration
 public class SpringSecurityConfiguration {
     //LDAP or Database
@@ -53,20 +58,18 @@ public class SpringSecurityConfiguration {
     //Frames
 
     @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-
-        http.authorizeHttpRequests(
-                auth -> auth.anyRequest().authenticated());
-        http.formLogin(withDefaults());
-
-        http.csrf().disable();
-        http.headers().frameOptions().disable();
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        http
+                .csrf(csrf -> csrf
+                        .ignoringRequestMatchers("/h2-console/**") // disable CSRF for H2 console
+                )
+                .authorizeHttpRequests(auth -> auth
+                        .anyRequest().authenticated()
+                )
+                .headers(headers -> headers
+                        .frameOptions(frameOptions -> frameOptions.sameOrigin()) // use sameOrigin to allow H2 console in frames
+                );
 
         return http.build();
     }
-
-
-
-
-
 }
