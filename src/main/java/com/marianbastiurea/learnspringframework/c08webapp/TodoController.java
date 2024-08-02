@@ -1,5 +1,7 @@
 package com.marianbastiurea.learnspringframework.c08webapp;
 
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -82,5 +84,9 @@ public class TodoController {
         todoService.updateTodo(todo);
         return "redirect:list-todos";
     }
-
+    private String getLoggedInUsername(ModelMap model) {
+        Authentication authentication =
+                SecurityContextHolder.getContext().getAuthentication();
+        return authentication.getName();
+    }
 }
