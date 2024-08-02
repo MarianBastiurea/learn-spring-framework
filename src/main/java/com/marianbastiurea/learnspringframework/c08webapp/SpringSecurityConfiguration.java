@@ -15,8 +15,6 @@ import java.util.function.Function;
 import static org.springframework.security.config.Customizer.withDefaults;
 
 
-
-
 @Configuration
 public class SpringSecurityConfiguration {
     //LDAP or Database
@@ -42,7 +40,7 @@ public class SpringSecurityConfiguration {
                 .passwordEncoder(passwordEncoder)
                 .username(username)
                 .password(password)
-                .roles("USER","ADMIN")
+                .roles("USER", "ADMIN")
                 .build();
         return userDetails;
     }
