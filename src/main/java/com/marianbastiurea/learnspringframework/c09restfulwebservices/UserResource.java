@@ -1,9 +1,7 @@
 package com.marianbastiurea.learnspringframework.c09restfulwebservices;
 import java.util.List;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class UserResource {
@@ -20,10 +18,14 @@ public class UserResource {
         return service.findAll();
     }
 
-    // GET /users
-//    @GetMapping("/users/{id}")
-//    public User retrieveUser(@PathVariable int id) {
-//        return service.findOne(id);
-//    }
-
+     //GET /users
+    @GetMapping("/users/{id}")
+    public User retrieveUser(@PathVariable int id) {
+        return service.findOne(id);
+    }
+    //POST /users
+    @PostMapping("/users")
+    public void createUser(@RequestBody User user) {
+        service.save(user);
+    }
 }
