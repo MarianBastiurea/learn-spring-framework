@@ -1,8 +1,10 @@
-create table course
+create table TODO
 (
-	id bigint not null,
-	name varchar(255) not null,
-	author varchar(255) not null,
-	primary key (id)
+    id bigint not null,
+    username varchar(255) not null,
+    description varchar(255) not null,
+    target_date date not null,
+    done boolean,
+    primary key (id)
 
 );
