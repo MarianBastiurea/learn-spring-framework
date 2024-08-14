@@ -12,7 +12,6 @@ export default function LearningComponent() {
         <SecondComponent />
         <ThirdComponent />
         <FourthComponent />
-        <FifthComponent />
         <LearningJavaScript />
       </div>
     )
