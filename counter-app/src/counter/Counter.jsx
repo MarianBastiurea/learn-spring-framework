@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './Counter.css'
-import CounterButton from './CounterButton'
+import CounterButton from './CounterButton.jsx'
 
 export default function Counter() {
     
