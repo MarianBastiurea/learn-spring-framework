@@ -2,7 +2,25 @@ import { useState } from 'react'
 import {PropTypes} from 'prop-types'
 import './Counter.css'
 
-export default function Counter({by}) {    
+export default function Counter() {
+    
+    const [count, setCount] = useState(0)
+
+    function incrementCounterParentFunction(by) {
+        setCount(count + by)
+    }
+    
+    return (
+        <>
+            <span className="totalCount">{count}</span>
+            <CounterButton by={1}/>
+            <CounterButton by={2}/>
+            <CounterButton by={5}/>
+        </>
+    )
+}
+
+function CounterButton({by}) {    
 
     //[0, ƒ]
     //const [firstElt, secondElt] = array
@@ -32,10 +50,10 @@ export default function Counter({by}) {
     )
 }
 
-Counter.propTypes = {
+CounterButton.propTypes = {
     by: PropTypes.number
 }
 
-Counter.defaultProps = {
+CounterButton.defaultProps = {
     by: 5
 }
