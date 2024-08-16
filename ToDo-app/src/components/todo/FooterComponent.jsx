@@ -1,5 +1,3 @@
-
-
 function FooterComponent() {
     return (
         <footer className="footer">
