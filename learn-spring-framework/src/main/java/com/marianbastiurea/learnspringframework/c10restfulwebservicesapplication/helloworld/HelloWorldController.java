@@ -1,4 +1,4 @@
-package com.marianbastiurea.learnspringframework.c10restfulwebservicesapplication;
+package com.marianbastiurea.learnspringframework.c10restfulwebservicesapplication.helloworld;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
