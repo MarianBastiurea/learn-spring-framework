@@ -1,10 +1,11 @@
 import './App.css';
-import LearningComponent from './components/learning-examples/LearningComponent'
-
+// import LearningComponent from './components/learning-examples/LearningComponent'
+import ToDoApp from './components/todo/ToDoApp.jsx'
 function App() {
   return (
     <div className="App">
-      <LearningComponent />
+      {/* <LearningComponent /> */}
+      <ToDoApp/>
     </div>
   )
 }
