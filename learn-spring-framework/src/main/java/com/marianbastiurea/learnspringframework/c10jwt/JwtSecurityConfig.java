@@ -1,4 +1,4 @@
-package com.marianbastiurea.learnspringframework.jwt;
+package com.marianbastiurea.learnspringframework.c10jwt;
 
 import com.nimbusds.jose.JOSEException;
 import com.nimbusds.jose.jwk.JWKSet;
