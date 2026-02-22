@@ -97,6 +97,8 @@ Build and secure a REST API
 Use JPA effectively for persistence
 Apply unit testing and mocking best practices
 Develop a production-ready backend application
+
 📌 Status
 ✔ Completed
+
 🔄 Future improvements and optimizations possible
